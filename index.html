@@ -15,26 +15,23 @@
   </head>
   <body>
     <div class="header">
-      <img src="assets/logo-header.png" class="" alt="" />
-      <div class="ham">
-        <img src="assets/ham.jpg" alt="" />
+      <img src="assets/logo-header.png" id="brand" class="" alt="" />
+      <img src="assets/ham.jpg" id="toggleBtn" alt="" />
+    </div>
+
+    <div class="navbar" id="nav">
+      <div class="item1 active" id="item1">
+        <div class="items">Home</div>
+        <div class="items">Product</div>
+        <div class="items">Company</div>
+        <div class="items">Contact</div>
+      </div>
+      <div class="search-bar" id="search-bar">
+        <input type="text" size="20" placeholder="Search" />
       </div>
     </div>
 
-    <div class="main-header">
-      <div class="navbar">
-        <div class="item1">
-          <div class="items">Home</div>
-          <div class="items">Product</div>
-          <div class="items">Company</div>
-          <div class="items">Contact</div>
-        </div>
-        <div class="search-bar">
-          <input type="text" size="20" placeholder="Search" />
-        </div>
-      </div>
-      <div class="main-img"></div>
-    </div>
+    <div class="main-img" id="main-img"></div>
 
     <div class="menu-icons">
       <div class="mIcons"></div>
@@ -113,6 +110,8 @@
     </div>
 
     <div class="footer">Copyright &#169; 2022 black. All rights reserved</div>
+
+    <script src="app.js"></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnik -->
   </body>
