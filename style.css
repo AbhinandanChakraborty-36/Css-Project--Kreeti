@@ -121,7 +121,7 @@ body {
   color: rgb(90, 88, 88);
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   #toggleBtn {
     display: block;
     cursor: pointer;
@@ -189,7 +189,7 @@ body {
   }
 }
 
-@media (min-width: 381px) {
+@media (min-width: 481px) {
   .navbar {
     background-color: "gray";
   }
