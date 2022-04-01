@@ -1,53 +1,27 @@
+/*Applying style on whole body */
 body {
   margin: 0;
   padding: 0;
 }
 
-.header {
+/* header */
+header {
   height: 10vh;
   display: flex;
   justify-content: space-between;
   padding: 1em;
 }
 
-#toggleBtn {
-  display: none;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1em;
+/* Navbar */
+nav {
   background-color: gray;
   color: white;
-  font-size: 1em;
-  gap: 1em;
+}
+form {
+  margin-right: 1em;
 }
 
-.item1 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex: 2;
-}
-
-.items {
-  margin: 0.5em;
-}
-
-.search-bar {
-  display: flex;
-  justify-content: flex-end;
-  flex: 2;
-}
-
-.search-bar input {
-  border-radius: 15px 15px;
-  border: 0;
-  padding: 0.5em;
-  width: 60%;
-}
-
+/* Main Image */
 .main-img {
   height: 45vh;
   background-image: url("assets/download2.jpg");
@@ -55,6 +29,7 @@ body {
   background-size: auto;
 }
 
+/* Small menu icons */
 .menu-icons {
   display: flex;
   height: 1em;
@@ -75,6 +50,7 @@ body {
   background-color: black;
 }
 
+/* About section */
 .about {
   margin-top: 0.75em;
   display: flex;
@@ -85,16 +61,12 @@ body {
   margin-bottom: 1em;
 }
 
-.het {
-  height: 10vh;
-  background-position: center;
-}
-
 .about--item {
   background-color: rgb(90, 88, 88);
   padding: 0.5em;
 }
 
+/* Info section */
 .info {
   background-color: rgb(90, 88, 88);
   display: flex;
@@ -109,55 +81,41 @@ body {
   margin-top: 2em;
 }
 
-.blk {
-  background-color: black;
-}
-
-.footer {
+footer {
   margin-top: 1em;
-  border: 2px solid grey;
+  border-top: 2px solid grey;
   padding: 1em 0;
   text-align: center;
   color: rgb(90, 88, 88);
 }
 
-@media (max-width: 500px) {
-  #toggleBtn {
-    display: block;
-    cursor: pointer;
-  }
+/* Media query for small screens */
 
-  .navbar {
+@media (max-width: 575px) {
+  nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0;
+    justify-content: center;
+    padding: 1em;
   }
 
-  /* .navbar .blk {
-    background-color: black;
-  } */
-
-  .item1 {
-    flex-direction: column;
-    margin-bottom: 1em;
-    font-size: 0.75em;
-    background-color: black;
-    margin-bottom: 0;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .search-bar {
+  form {
     margin: 1em;
+  }
+
+  .collapse-fly {
+    position: absolute;
+    background: black none repeat scroll 0% 0%;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+  }
+
+  li {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80%;
   }
-  .active {
-    display: none;
-  }
+
   .about {
     flex-direction: column;
   }
@@ -177,6 +135,7 @@ body {
   .info2 {
     border: none;
     border-top: 2px dashed white;
+    padding-top: 0.5em;
   }
 
   li {
@@ -186,15 +145,5 @@ body {
   .footer {
     border: none;
     border-top: 2px solid grey;
-  }
-}
-
-@media (min-width: 501px) {
-  .navbar {
-    background-color: "gray";
-  }
-  .het {
-    height: 30vh;
-    background-position: center;
   }
 }
