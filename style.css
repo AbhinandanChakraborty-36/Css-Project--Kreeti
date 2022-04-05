@@ -5,6 +5,12 @@ body {
 }
 
 /* header */
+.contain{
+  width: 100%;
+  height:100%;
+  position: relative;
+  padding-bottom: 12vh;
+}
 header {
   height: 10vh;
   display: flex;
@@ -16,14 +22,25 @@ header {
 nav {
   background-color: gray;
   color: white;
+  height:10vh;
 }
 form {
   margin-right: 1em;
 }
 
+form input{
+  border-radius: 20px !important;
+  width: 250px !important;
+}
+
+nav li a{
+  color: white !important;
+}
+
+
 /* Main Image */
 .main-img {
-  height: 45vh;
+  height: 40vh;
   background-image: url("assets/download2.jpg");
   background-position: center;
   background-size: auto;
@@ -82,11 +99,25 @@ form {
 }
 
 footer {
-  margin-top: 1em;
+  /* margin-top: 0.5em; */
   border-top: 2px solid grey;
-  padding: 1em 0;
+  /* margin-bottom: 1em; */
   text-align: center;
   color: rgb(90, 88, 88);
+  height: 10vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+ol li{
+  margin: 1em;
 }
 
 /* Media query for small screens */
@@ -129,6 +160,7 @@ footer {
   }
 
   ol {
+    list-style:decimal-leading-zero;
     padding-left: 1em;
   }
 
