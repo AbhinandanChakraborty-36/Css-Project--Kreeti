@@ -5,11 +5,10 @@ body {
 }
 
 /* header */
-.contain{
-  width: 100%;
+.container{
+  width: 80%;
   height:100%;
   position: relative;
-  gap: 1em;
 }
 header {
   height: 10vh;
