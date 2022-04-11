@@ -36,7 +36,7 @@ nav li a{
   color: white !important;
 }
 nav li a:hover{
-  color:red;
+  color:red !important;
 }
 
 /* Main Image */
