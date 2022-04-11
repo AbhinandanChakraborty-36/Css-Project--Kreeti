@@ -30,7 +30,7 @@ form {
 
 form input{
   border-radius: 20px !important;
-  width: 250px !important;
+  width: 50%;
 }
 
 nav li a{
