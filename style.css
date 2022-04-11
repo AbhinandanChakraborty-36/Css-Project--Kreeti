@@ -36,7 +36,9 @@ form input{
 nav li a{
   color: white !important;
 }
-
+nav li a:hover{
+  color:red;
+}
 
 /* Main Image */
 .main-img {
@@ -109,7 +111,6 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top:1em;
-  background-color:red;
 }
 
 
