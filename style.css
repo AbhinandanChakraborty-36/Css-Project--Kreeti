@@ -5,11 +5,11 @@ body {
 }
 
 /* header */
-.container{
+/* .container{
   width: 80%;
   height:100%;
   position: relative;
-}
+} */
 header {
   height: 10vh;
   display: flex;
@@ -134,7 +134,7 @@ ol li{
   .collapse-fly {
     position: absolute;
     background: black none repeat scroll 0% 0%;
-    width: 100vw;
+/*     width: 100vw; */
     left: 0px;
     top: 0px;
   }
