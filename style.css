@@ -66,17 +66,24 @@ nav li a:hover{
 }
 
 .carousel-item img{
-height: 100vh;
+height: 40vh;
 width: 100vw;
-object-fit: cover;
-object-position:center;
 }
 /* Main Image */
 .main-img {
   height: 40vh;
-  background-image: url("assets/download2.jpg");
+  /* background-image: url("assets/download2.jpg");
   background-position: center;
-  background-size: auto;
+  background-size: auto; */
+  background-color: palevioletred;
+  object-fit:cover
+  
+}
+
+.main-img img{
+  width: 100%;  
+  display: block;
+  height: 100%;
 }
 
 /* Small menu icons */
