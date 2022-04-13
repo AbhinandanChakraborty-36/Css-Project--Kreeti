@@ -2,42 +2,35 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom:80px;
 }
 
-
-
-.contain{
-  max-width: 1440px !important;
-  margin: 0 auto;
-  padding: 5px 0;
-  height: max-content;
-}
 header {
-  height:50px;
   display: flex;
   justify-content: space-between;
-  padding: 0.25em;
 }
 
 .logo{
-  /* background-color: red; */
-  height: 100%;
-  flex: 2;
-  /* margin: 1em 0; */
+   padding: 1em;
 }
 
 .ham{
-  height: 100%;
-  flex: 1;
-  justify-content: flex-end;
+  align-items: center;
   display: flex;
 
 }
 
-header img{
+.logo img{
   display: block;
-  /* width: 100%; */
-  height: 100%;
+  max-height: 64px;
+
+}
+
+.ham img{
+  display: block;
+  max-height: 45px;
 }
 
 /* Navbar */
@@ -49,11 +42,11 @@ nav {
 }
 form {
   margin-right: 1em;
+  max-width: 300px;
 }
 
 form input{
   border-radius: 20px !important;
-  max-height: 100% !important;
 }
 nav li a{
   color: white !important;
@@ -66,15 +59,12 @@ nav li a:hover{
 }
 
 .carousel-item img{
-height: 40vh;
+height: 60vh;
 width: 100vw;
 }
 /* Main Image */
 .main-img {
   height: 40vh;
-  /* background-image: url("assets/download2.jpg");
-  background-position: center;
-  background-size: auto; */
   background-color: palevioletred;
   object-fit:cover
   
@@ -107,6 +97,13 @@ width: 100vw;
   background-color: black;
 }
 
+.contain{
+  max-width: 1440px !important;
+  margin: 0 auto;
+  padding: 5px 0;
+  height: max-content;
+}
+
 /* About section */
 .about {
   margin-top: 0.75em;
@@ -120,7 +117,7 @@ width: 100vw;
 
 .about--item {
   background-color: rgb(90, 88, 88);
-  padding: 0.5em;
+  padding: 1em;
 }
 
 /* Info section */
@@ -133,22 +130,28 @@ width: 100vw;
   color: white;
 }
 
+.info1{
+  flex: 2.25;
+}
+
 .info2 {
   border-left: 1px dashed white;
   margin-top: 2em;
+  flex: 1;
 }
 
 footer {
-  /* margin-top: 0.5em; */
   border-top: 2px solid grey;
-  /* margin-bottom: 1em; */
   text-align: center;
   color: rgb(90, 88, 88);
-  height: 30%;
+  height: 10vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top:1em;
+  justify-content: center;
+  max-height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p{
@@ -169,17 +172,22 @@ ol li{
     padding: 1em;
   }
 
-  form {
-    margin: 0.5em 0;
-
+  .logo img{
+    max-height: 30px;
   }
 
+  form {
+    margin: 0.5em 0;
+    max-width: none;
+  }
 
+  form input{
+    width: 100% !important;
+  }
 
   .collapse-fly {
     position: absolute;
     background: black none repeat scroll 0% 0%;
-/*     width: 100vw; */
     left: 0px;
     top: 0px;
     z-index: 3;
