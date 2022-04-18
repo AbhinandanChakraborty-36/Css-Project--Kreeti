@@ -24,7 +24,7 @@ header {
 
 .logo img{
   display: block;
-  max-height: 64px;
+  max-height: 45px;
 
 }
 
@@ -40,6 +40,9 @@ nav {
   height:max-content;
 
 }
+.cover{
+  background-color: gray;
+}
 form {
   margin-right: 1em;
   max-width: 300px;
@@ -54,14 +57,18 @@ nav li a{
 nav li a:hover{
   color:red !important;
 }
-.carousels{
+
+.carousel{
   height: 60vh;
 }
-
-.carousel-item img{
-height: 60vh;
-width: 100vw;
+.carousel-inner{
+  height: 100%;
 }
+.carousel img{
+height: 60vh;
+width: 100%;
+}
+
 /* Main Image */
 .main-img {
   height: 40vh;
@@ -83,7 +90,6 @@ width: 100vw;
   justify-content: center;
   margin-top: 0.5em;
 }
-
 .mIcons {
   height: 100%;
   width: 1em;
@@ -183,6 +189,12 @@ ol li{
 
   form input{
     width: 100% !important;
+  }
+  .carousel{
+    height: 40vh;
+  }
+  .carousel img{
+    height: 40vh;
   }
 
   .collapse-fly {
