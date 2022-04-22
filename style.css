@@ -171,6 +171,7 @@ ol li{
     padding: 1em;
   }
 
+
   .logo img{
     max-height: 30px;
   }
@@ -202,7 +203,10 @@ ol li{
     top: 0px;
     z-index: 3;
   }
-
+.mIcons {
+   max-height:20px !important;
+max-width:20px !important;
+      }
   li {
     display: flex;
     justify-content: center;
