@@ -89,8 +89,8 @@ width: 100%;
   margin: 0 2em !important;
   border-radius: 50% !important;
   border: 2px solid black !important;
-  max-height: 40px !important;
-  max-width: 40px;
+  max-height: 30px !important;
+  max-width: 30px !important;
 }
 
 .active{
