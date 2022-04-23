@@ -6,7 +6,7 @@ body {
   position: relative;
   padding-bottom:80px;
 }
-
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -54,6 +54,8 @@ nav li a:hover{
   color:red !important;
 }
 
+/* Carousel */
+
 .carousel{
   height: 60vh;
 }
@@ -92,6 +94,8 @@ width: 100%;
 .active{
   background-color: black !important;
 }
+
+/* Container class */
 .contain{
   max-width: 1440px !important;
   margin: 0 auto;
@@ -135,6 +139,7 @@ width: 100%;
   flex: 1;
 }
 
+/* footer section */
 footer {
   border-top: 2px solid grey;
   text-align: center;
@@ -153,6 +158,7 @@ footer p{
   margin: 0.2em;
 }
 
+/* List item styling */
 ol li{
   margin: 1em;
 }
